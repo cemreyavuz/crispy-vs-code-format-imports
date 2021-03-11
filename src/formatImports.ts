@@ -22,8 +22,6 @@ enum CrispyImportGroup {
 type GroupedImports = Record<string, ts.Node[] | Record<string, ts.Node[]>>;
 
 export const formatImports = (): void => {
-  vscode.window.showInformationMessage("format importsssss");
-
   if (vscode.window.activeTextEditor) {
     const content = vscode.window.activeTextEditor.document.getText();
 
